@@ -1,0 +1,43 @@
+name: pytorch_env
+
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  # Core ML
+  - pytorch
+  - torchvision
+  - torchtext
+
+  # Data / numerics
+  - numpy
+  - scikit-learn
+  - pandas
+  - pyarrow=14               # pin to 14+ to avoid brotli symlink issues
+  - brotli=1.1               # ensure major version matches pyarrow's expectation
+
+  # Visualization
+  - matplotlib
+  - seaborn
+  - ipython
+
+  # Jupyter
+  - ipykernel
+  - ipywidgets
+  - portalocker
+
+  # Utilities
+  - tqdm
+  - pip
+
+  # Add image libraries to fix torchvision warnings
+  - pillow
+  - libjpeg-turbo
+  - libpng
+
+  - pip:
+    - torchdata==0.9.0
