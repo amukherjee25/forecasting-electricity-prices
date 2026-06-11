@@ -1,2 +1,3 @@
-# forecasting-electricity-prices
-This is the repository for the EE513 class project on forecasting consumer tariffs 
+# Evaluating Deep Learning Pipelines for Predicting Electricity Prices in Renewable-Dominated Markets
+
+Accurate electricity price forecasting is essential for market participants navigating increasingly renewable-dominated grids, where intermittent generation introduces high price volatility and non-linear temporal dynamics. This study compares end-to-end and multi-stage forecasting pipelines for day-ahead and real-time price prediction for the electricity market in Spain, evaluating both hybrid CNN+BiLSTM with attention and a standard Transformer architectures. Using publicly available data for 2015-2018, we find that the end-to-end pipeline outperforms the multi-stage pipeline with approximately $50\%$ lower MAE and MAPE across both forecasting horizons, with the Transformer achieving the best day-ahead performance and CNN+BiLSTM achieving the best real-time performance. 
